@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Одномерные массивы</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let massiv = Number(prompt('Размер массива A'));
+  let count = 0;
+  if (massiv > 15) {
+    document.write('Массив A не должен превышать более 15 элементов')
+  } else if (massiv % 1 != 0){
+    document.write('Массив A должен быть целочисленным!')
+  } else {
+    for (let i = 0; i < massiv; i++) {
+    let elements = Number(prompt('Введите элементы массива'));
+    if (i % 2 != 0){
+        count += 1
+        document.write(elements, '\n', '<br>');
+    }     
+  }
+  document.write('Размер полученного массива: ', count, '\n');
+}
+  </script>
+</body>
+</html>

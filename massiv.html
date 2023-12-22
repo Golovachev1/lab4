@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Одномерные массивы</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let massiv = Number(prompt('Введите число N'));
+  let result = 0;
+  if (massiv < 2) {
+    document.write('Число N должно быть больше одного!')
+  } else if (massiv % 1 != 0){
+    document.write('Число N должно быть целым!')
+  } else {
+  let first = Number(prompt('Введите первый член A'));
+  let raznost = Number(prompt('Введите разность D'));  
+    for (let i = 0; i < massiv; i++) {
+    result = first + i * raznost
+    document.write(result, '\n');
+  }
+}
+  </script>
+</body>
+</html>
